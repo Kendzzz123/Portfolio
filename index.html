@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Portfolio</title>
+  <link href="styles/index.css" rel="stylesheet">
+</head>
+
+<body onload="expandNavbar()">
+  <header class="hidden">
+    <nav id="navbar">
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+
+    <h1>
+      Home
+    </h1>
+
+    <section id="home" class="section hidden">
+
+      <div class="content">
+
+        <div class="profile">
+
+          <img src="img/profile.jpg" alt="Profile">
+
+          <h2>
+            Kend Harley O. Adanza
+          </h2>
+
+          <p>
+            BS in Information Technology
+          </p>
+
+        </div>
+
+        <div class="description-home">
+
+          <div class="description-text">
+            <p>
+              I&rsquo;m an IT student who&rsquo;s always curious about how things work—especially when it comes to apps,
+              websites, and databases.
+              I love testing out software and figuring out how everything connects behind the scenes. <br> <br>
+
+              I&rsquo;m currently learning more about front-end development and databases, and I enjoy discovering new
+              ways to improve or break (and then fix) things. <br> <br>
+
+              When I&rsquo;m not at work, you can find me playing turn-based games or playing musical instruments that
+              helps me develop my creativity and problem solving skills. <br> <br>
+
+              I&rsquo;m always up for a challenge, and I believe in learning by doing—so feel free to leave me a message
+              and let's talk!
+            </p>
+          </div>
+          <a href="#contact">
+            <button class="btn-home">
+              Contact me
+            </button>
+          </a>
+        </div>
+
+      </div>
+
+    </section>
+
+    <h1>
+      About Me
+    </h1>
+
+    <section id="about" class="section hidden">
+
+      <div class="content">
+
+        <div class="description-about">
+
+          <div class="description-text">
+
+            
+            <p>
+              I&rsquo;m a first-year BS Information Technology student at Our Lady of Fatima University.
+              I&rsquo;ve always been a curious person, especially when it comes to how websites and applications work.
+              Right now, I&rsquo;m diving deeper into website development, and on the side,
+              I enjoy testing different software to see how they perform and where they can improve.<br> <br>
+            </p>
+
+          </div>
+          <div class="tech">
+
+            <p>
+              Tech stack — <br> <br>
+            </p>
+
+          </div>
+
+          <article class="techstack">
+
+            <div class="frontend">
+
+              <p>
+                Front-end:&nbsp;
+                <span style="color: #E44D26;" margin="0">
+                  HTML
+                </span>
+
+                /
+                <span style="color: #1572B6;">
+                  CSS
+                </span>
+
+                ,&nbsp;
+                <span style="color: #F7DF1E;">
+                  JavaScript
+                </span>
+
+              </p>
+
+            </div>
+
+            <div class="backend">
+
+              <p>
+
+                Back-end:&nbsp;
+
+                <span style="color: #00758F;" margin="0">
+                  MySQL
+                </span>
+
+                ,&nbsp;
+
+                <span style="color: #FFD43B;">
+                  Python
+                </span>
+
+              </p>
+
+            </div>
+
+            <div class="systembased">
+
+              <p>
+
+                System-based:&nbsp;
+
+                <span style="color: #00599C;" margin="0">
+                  C
+                </span>
+
+              </p>
+
+            </div>
+
+          </article>
+          </p>
+          <br>
+
+          <!--Gagawin tong Educational Attainment, projects, and certificates-->
+          <button class="btn-about" onclick="window.location.href='achievements.html'">
+            See my achievements
+          </button>
+        </div>
+
+        <div class="about-img">
+          <figure>
+                <img
+                  src="https://cdn.prod.website-files.com/6344c9cef89d6f2270a38908/673f2a3b44c1ed4901bb43bb_6386328bea96dffacc89946b_d1.webp"
+                  alt="image 1" style="width: 300px;">
+            <figcaption>
+
+              <h2>
+
+                Web Development
+
+              </h2>
+
+            </figcaption>
+          </figure>
+
+        <figure>
+          <img
+            src="img/QATester.jpg"
+            alt="image 2" style="width: 300px;">
+          <figcaption>
+
+            <h2>
+
+              Quality Assurance Testing
+
+            </h2>
+
+          </figcaption>
+
+        </figure>
+
+        <figure>
+              <img
+                src="img/Sysdev.jpg" alt="image 3" style=" width: 300px;">
+          <figcaption>
+
+            <h2>
+
+              system - development
+
+            </h2>
+
+          </figcaption>
+
+        </figure>
+
+        <figure>
+              <img src="img/Datman.jpg" alt="image 4" style="width: 300px;">
+          <figcaption>
+
+            <h2>
+
+              Database Management
+
+            </h2>
+
+          </figcaption>
+
+        </figure>
+
+      </div>
+
+    </section>
+
+    <h1 class="contact-meme">
+      Contact Me
+    </h1>
+
+    <section id="contact" class="section hidden">
+
+      <div class="content">
+
+        <div class="contact-me">
+
+          <form id="contactForm" class="form-grid">
+
+            <div class="form-group">
+
+              <label for="name">
+                Name:
+              </label>
+
+              <input type="text" id="name" name="name" width="150" required>
+
+            </div>
+
+            <div class="form-group">
+
+              <label for="address">
+                Address:
+              </label>
+
+              <input type="text" id="address" name="email" size="150" required>
+
+            </div>
+
+            <div class="form-group">
+
+              <label for="email">
+                Email:
+              </label>
+
+              <input type="email" id="email" name="email" size="150" required>
+
+            </div>
+
+            <div class="form-group">
+
+              <label for="email">
+                Phone:
+              </label>
+
+              <input type="phone" id="phone" name="phone" size="150" required>
+
+            </div>
+
+            <div class="form-actions">
+
+              <button type="submit" class="btn-contact">
+                Submit
+              </button>
+
+            </div>
+
+          </form>
+
+        </div>
+      </div>
+      </form>
+
+    </section>
+
+  </main>
+
+  <footer>
+    <div class="footer-content">
+
+      <p>
+        <strong>
+          Name:
+        </strong>
+        Kend Harley Adanza
+      </p>
+
+      <p>
+        <strong>Location:</strong>
+        Quezon City, Philippines
+      </p>
+
+      <p>
+        Facebook: <a href="https://www.facebook.com/kendzzz123" target="_blank"><strong>Kend Harley
+            Adanza</strong></a> |
+        Email: <a href="mailto:koadanza0014qc@student.fatima.edu.ph">koadanza0014qc@student.fatima.edu.ph</a>
+      </p>
+
+      <p>
+        Phone: <a href="tel:+639270755388"><strong>09270755388</strong></a> |
+        Discord: <a href="https://discord.com/users/ryoku4783" target="_blank"><strong>Ryoku4783</strong></a>
+      </p>
+
+      <a href="#home" class="back-to-top">
+        Back to top?
+      </a>
+    </div>
+  </footer>
+  <script src="javascript/index.js"></script>
+</body>
+
+</html>
